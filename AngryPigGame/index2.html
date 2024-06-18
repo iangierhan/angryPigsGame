@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Exercise Angry Pigs
+Author: Ian Gierhan
+Date: 2023-04-03 -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Angry Pig - Ian Gierhan</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="content.css">
+    <script src='Box2dWeb-2.1.a.3.min.js'></script>
+    <script src='boxbox.min.js'></script>
+    <script src='game.js' async></script>
+
+</head>
+
+<body>
+
+  <!-- Add a container for the score text -->
+  <div id="score-container">
+    <h2>Angry Pigs Bowling</h2>
+    <ol>
+      <li>Use the spacebar to send the pig into the pins.</li>
+      <li>Use the up and down arrow keys to move the pig in the direction you want.</li>
+    </ol>
+    <button onclick="refreshPage()" style="background-color: blue;
+       color: white;">Click here for New Game</button>&nbsp;&nbsp;&nbsp;
+       <button href="../index.html"  style="background-color: green; color: white;">Click here to go back to Portfolio</button>
+    <p><span id="txtScore">Score: 0 Pins</span></p>
+    
+  </div>
+
+    <canvas id="game" width="1300" height="480">
+        Text you see if your browser does not support canvas :
+    </canvas>
+
+    <p id="version">Version 1.00.00</p>
+</body>
+
+<!--
+https://bocoup.com/blog/introducing-boxbox
+
+https://topheman.github.io/boxbox/
+-->
+
+</html>
